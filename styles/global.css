@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/inter/Inter_18pt-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat/Montserrat-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Oleo Script";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Oleo-Script/OleoScript-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Regular.woff2);
+}
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Montserrat", sans-serif;
+  --third-family: "Poppins", sans-serif;
+  --fourth-family: "Oleo Script", sans-serif;
+  --font-45: 2.8125rem;
+  --font-35: 2.1875rem;
+  --font-26: 1.625rem;
+  --font-20: 1.25rem;
+  --font-18: 1.125rem;
+  --font-16: 1rem;
+  --font-14: 0.875rem;
+
+  /* --------------------------------------- */
+  --base-white: #fff;
+  --white-smoke: #f5f5f5;
+  --body-color: #e0e8f6;
+  --active-link: #4fc3f7;
+  --btn-hover: rgb(4, 219, 239);
+  --exit-color: #ea4335;
+  --icon-bg: #bce7fa;
+  --card-text: #1c1e53;
+  --dark-gray: #282938;
+  --dark-slate: #484e53;
+  --placeholder-color: #89871a;
+  --sub-color: linear-gradient(180deg, #4fc3f7 0%, #050505 100%);
+  --card-bg: linear-gradient(
+    137deg,
+    #0080ff 0%,
+    #97cbff 35%,
+    #93e6ff 50%,
+    #97cbff 65%,
+    #0080ff 100%
+  );
+}
+
+/* --------- Darck-Theme ---------- */
+body.dark {
+  --body-color: #050505; /* фон страницы тёмный */
+  --base-white: #1a1a1a; /* «белые» блоки становятся тёмными */
+  --white-smoke: #101010;
+  --dark-slate: #f5f5f5; /* тёмный текст → светлый */
+  --dark-gray: #e0e0e0;
+  --card-text: #f0f0f0;
+  --card-bg: linear-gradient(
+    137deg,
+    #0073ff 0%,
+    #2824a8 30%,
+    #0048b4 50%,
+    #2824a8 70%,
+    #0055bd 100%
+  );
+  --icon-bg: #bce7fa;
+  --placeholder-color: #bdbdbd;
+  --active-link: #4fc3f7; /* можно оставить тем же */
+  --btn-hover: rgb(4, 219, 239);
+}
+
+body.dark .hero-wrapper {
+  background-image: url(../images/hero-bg-black.png);
+  box-shadow: 0 0px 100px rgb(44, 44, 44);
+}
+
+body.dark .page-theme {
+  background-image: url(../images/light-icons/light-btn-icon.svg);
+}
+
+body.dark .btn {
+  border-color: var(--active-link);
+}
+
+body.dark .a-btn {
+  border-color: var(--active-link);
+}
+
+body.dark .a-btn:hover {
+  color: var(--dark-slate);
+}
+
+body.dark .subtitle {
+  background: linear-gradient(180deg, #b9e9ff 0%, #3950f7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+body.dark .work__icon-wrapper {
+  background-color: var(--btn-hover);
+}
+
+body.dark .burger__menu-item > a {
+  color: whitesmoke;
+}
+
+body.dark .works__subtitle {
+  background: linear-gradient(1755deg, #4fc3f7 0%, #e0e0e0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+body.dark .works__card-info > span::before {
+  color: rgb(0, 255, 0);
+}
+
+/* --------- /Darck-Theme ---------- */
+
+html {
+  font-family: var(--font-family);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1520px;
+  margin-inline: auto;
+  background-color: var(--body-color);
+}
+
+section {
+  padding-block: 50px;
+  border-bottom: 0.3px dotted rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--dark-gray);
+}
+
+h1 {
+  font-family: var(--third-family);
+  font-size: clamp(3rem, 6.2vw, 3.938rem);
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.1rem;
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-size: clamp(var(--font-35), 4.4vw, var(--font-45));
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: var(--font-20);
+  line-height: 120%;
+  letter-spacing: 0.07rem;
+}
+
+h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: var(--font-16);
+  line-height: 120%;
+}
+
+a,
+button,
+select {
+  cursor: pointer;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--active-link);
+  outline-offset: 2px;
+}
+
+.container {
+  max-width: 1065px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.subtitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: var(--font-18);
+
+  background: var(--sub-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-content {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-inline: auto;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding-block: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 80px;
+  }
+
+  section:first-child {
+    padding-block: 10px 0;
+  }
+  .container {
+    margin: 0;
+    padding-block: 0;
+  }
+}

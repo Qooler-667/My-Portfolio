@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/page.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="header__logo"><a href="#">Andrey</a></div>
+        <nav aria-label="Main navigation">
+          <ul class="header__menu-list">
+            <li class="header__menu-item" data-lang="ru"><a href="index.html#hero">Главная</a></li>
+            <li class="header__menu-item" data-lang="ru"><a href="index.html#about">Обо мне</a></li>
+            
+            <li class="header__menu-item" data-lang="ru"><a href="index.html#services">Услуги</a></li>
+            <li class="header__menu-item" data-lang="ru"><a href="index.html#works">Мои работы</a></li>
+<!-- ------------ EN ---------------- -->
+            <li class="header__menu-item" data-lang="en" style="display: none;"><a href="index.html#hero">Home</a></li>
+            <li class="header__menu-item" data-lang="en" style="display: none;" ><a href="index.html#about">About</a></li>
+            <li class="header__menu-item" data-lang="en" style="display: none;"><a href="index.html#services">Services</a></li>
+            <li class="header__menu-item" data-lang="en" style="display: none;"><a href="index.html#works">My Works</a></li>
+          </ul>
+        </nav>
+        <a href="index.html#connect" class="header__btn-contact" type="button">Contact</a>
+        <!-- -----=== Setting-btn ===----- -->
+
+        <div class="setting-btns-wrapper">
+          <label class="switch" for="checkbox">
+            <input type="checkbox" id="checkbox" class="switch__input">
+            <span class="switch__slider"></span>
+          </label>
+            <!-- ----------------- -->
+            <button
+          class="page-theme"
+          aria-label="Toggle theme"
+          type="button">
+            </button>
+        </div>
+
+        <!-- -----=== Burger-btn ===----- -->
+        <button class="header__burger" aria-label="Open menu" type="button">
+          <span></span>
+        </button>
+    </div>
+    </header>
+    <!-- ---------------------------------------------------------------- -->
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="container hero__container">
+          <div class="hero-wrapper">
+            <img src="./images/icons/deweloper-icon.svg" alt="developer icon" />
+
+            <div class="hero__title-wrapper section-title">
+              <h1 class="hero__title" data-lang="ru">Привет, я Андрей</h1>
+                <p class="hero__subtitle subtitle" data-lang="ru">frontend developer</p>
+  <!-- ------------ EN ---------------- -->
+              <h1 class="hero__title" data-lang="en" style="display: none;">Hi, I'm Andrey</h1>
+              <p class="hero__subtitle subtitle" data-lang="en" style="display: none;">frontend developer</p>
+            </div>
+
+            <div class="hero__content section-content"> 
+              <p data-lang="ru">
+                Я фронтенд‑разработчик, работаю с **HTML, CSS и Git**, собираю страницы и слежу за чистотой кода и аккуратной историей изменений.
+                **Параллельно изучаю JavaScript и React**, беру всё более сложные задачи и добавляю новые возможности в свои проекты.
+              </p>  
+
+  <!-- ------------ EN ---------------- -->
+              <p data-lang="en" style="display: none;">
+                "I’m a Frontend Developer working with HTML, CSS, and Git. I take pride in writing clean code and keeping my Git history organized. I’m also diving deep into JavaScript and React right now, challenging myself with more complex tasks and adding new functionality to what I build."
+              </p>
+              <button
+                class="hero__btn btn"
+                type="button"
+                aria-label="Contact button" data-lang="ru">
+                Связаться со мной
+              </button>
+
+<!-- ------------ EN ---------------- -->
+              <button
+                class="hero__btn btn"
+                type="button"
+                aria-label="Contact button" data-lang="en" style="display: none;">
+                Contact Me
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- -------------------------------------------------------------- -->
+
+      <section id="about" class="about-section">
+        <div class="container about__container">
+          <div class="about-wrapper">
+            <div class="about__title-wrapper section-title">
+              <h2 class="about__title" data-lang="ru">Обо мне</h2>
+              <p class="about__subtitle subtitle" data-lang="ru">Подробнее обо мне</p>
+
+<!-- ------------ EN ---------------- -->
+              <h2 class="about__title" data-lang="en" style="display: none;">About Me</h2>
+              <p class="about__subtitle subtitle" data-lang="en" style="display: none;">Get to know me</p>
+            </div>
+
+            <div class="about__content section-content">
+              <p data-lang="ru">
+                Мне нравится разбираться в устройстве интерфейсов, пробовать
+                разные подходы к вёрстке и искать решения, которые делают сайт
+                удобнее для пользователя.
+              </p>
+              <p data-lang="ru">
+                Специализируюсь на создании адаптивных и pixel-perfect макетов с акцентом на чистоту кода и прозрачную историю коммитов в Git. Мой основной приоритет — аккуратная и продуманная верстка. Параллельно активно расширяю стек: изучаю JavaScript и React, чтобы внедрять в проекты сложную логику и интерактивные возможности.
+              </p>
+
+              <!-- ------------ EN ---------------- -->
+              <p data-lang="en" style="display:none;">I enjoy understanding interface mechanics, trying different layout approaches, and finding solutions that make websites more user-friendly.</p>
+<p data-lang="en" style="display:none;">In learning projects, I practice working with grids, responsive design, JavaScript interactive elements, and Git to create clean, understandable portfolio projects.</p>
+            </div>
+
+            <button class="about__btn btn" type="button" aria-label="button" data-lang="ru">
+              Скачать резюме
+            </button>
+<!-- ------------ EN ---------------- -->
+            <button class="about__btn btn" type="button" aria-label="button" data-lang="en" style="display: none;">
+              Download Resume
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- -------------------------------------------------------------- -->
+
+      <section id="services" class="services-section">
+        <div class="container services__container">
+          <div class="services__title-wrapper section-title">
+            <h2 class="services__title" data-lang="ru">Что я делаю</h2>
+            <p class="services__subtitle subtitle" data-lang="ru">Мои услуги</p>
+
+            <!-- ------------ EN ---------------- -->
+            <h2 class="services__title" data-lang="en" style="display: none;">What i do</h2>
+            <p class="services__subtitle subtitle" data-lang="en" style="display: none;">My Services</p>
+
+          </div>
+          <div class="services__cards-wrapper">
+            <!-- ------- Card  --------- -->
+            <div class="services__card">
+              <div class="services__icon-wrapper">
+                <img
+                  class="services__card-icon"
+                  src="./images/icons/star-icon.svg"
+                  alt="star-icon"
+                />
+              </div>
+              <h4 class="services__card-title" data-lang="ru">Адаптивная вёрстка и UI</h4>
+              <p class="services__card-text" data-lang="ru">
+                Верстаю адаптивные лендинги на HTML и CSS, использую Flex и
+                Grid, чтобы интерфейс выглядел аккуратно и удобно на разных
+                экранах.
+              </p>
+
+              <!-- ------------ EN ---------------- -->
+              <h4 class="services__card-title" data-lang="en" style="display: none;">Responsive Layouts & UI</h4>
+              <p class="services__card-text" data-lang="en" style="display: none;">
+                I build responsive landing pages with HTML and CSS, using Flex and Grid to ensure interfaces look clean and convenient across different screens.
+              </p>
+            </div>
+
+            <!-- ------- Card  --------- -->
+            <div class="services__card">
+              <div class="services__icon-wrapper">
+                <img
+                  class="services__card-icon"
+                  src="./images/icons/star-icon.svg"
+                  alt="star-icon"
+                />
+              </div>
+              <h4 class="services__card-title" data-lang="ru">Адаптивный дизайн</h4>
+              <p class="services__card-text" data-lang="ru">
+                Настраиваю адаптив под основные ширины: десктоп, планшет и
+                мобильный. Подбираю медиазапросы и сетку так, чтобы блоки не
+                ломались и сохраняли логику макета.
+              </p>
+
+              <!-- ------------ EN ---------------- -->
+              <h4 class="services__card-title" data-lang="en" style="display: none;">Responsive Design</h4>
+              <p class="services__card-text" data-lang="en" style="display: none;">
+                I configure responsive design for main screen sizes: desktop, tablet, and mobile. I select media queries and grid layouts so blocks don't break and maintain the design logic.
+              </p>
+            </div>
+
+            <!-- ------- Card  --------- -->
+            <div class="services__card">
+              <div class="services__icon-wrapper">
+                <img
+                  class="services__card-icon"
+                  src="./images/icons/star-icon.svg"
+                  alt="star-icon"
+                />
+              </div>
+              <h4 class="services__card-title" data-lang="ru">Детали UI и стили</h4>
+              <p class="services__card-text" data-lang="ru">
+                Работую с типографикой, цветами, иконками и небольшими эффектами
+                (тени, hover, фокус), чтобы интерфейс выглядел живее и не был
+                “холодным”.
+              </p>
+
+              <!-- ------------ EN ---------------- -->
+              <h4 class="services__card-title" data-lang="en" style="display: none;">UI Details & Styles</h4>
+              <p class="services__card-text"  data-lang="en" style="display: none;">
+                I work with typography, colors, icons, and small effects (shadows, hover, focus) to make interfaces feel alive and not "cold".
+              </p>
+
+            </div>
+            <!-- ------- Card  --------- -->
+            <div class="services__card">
+              <div class="services__card-left">
+                <div class="services__icon-wrapper">
+                  <img
+                    class="services__card-icon"
+                    src="./images/icons/robo-face-icon.svg"
+                    alt="robo-face-icon"
+                  />
+                </div>
+                <h3 class="services__card-title" data-lang="ru">Основы JavaScript</h3>
+                <p class="services__card-text" data-lang="ru">
+                Осваиваю базу JavaScript: условия, функции и логические задачи в браузере. Внедряю интерактивные элементы в свои проекты, постепенно переходя к более сложным задачам и динамическим сценариям.
+                </p>
+
+                <!-- ------------ EN ---------------- -->
+                <h3 class="services__card-title" data-lang="en" style="display: none;">JavaScript Basics</h3>
+                <p class="services__card-text" data-lang="en" style="display: none;">
+                Mastering JavaScript fundamentals: conditions, functions, and browser-based logic. I am adding interactivity to my projects, gradually taking on more complex tasks and dynamic features.
+                </p>
+              </div>
+              <div class="services__card_right">
+                <img
+                  class="services__card-img"
+                  src="./images/head.png"
+                  alt="digital head"
+                />
+              </div>
+            </div>
+            <!-- ------- Card  --------- -->
+            <div class="services__card">
+              <div class="services__icon-wrapper">
+                <img
+                  class="services__card-icon"
+                  src="./images/icons/face-icon.svg"
+                  alt="face-icon"
+                />
+              </div>
+              <h4 class="services__card-title" data-lang="ru">Git и рабочий процесс</h4>
+              <p class="services__card-text" data-lang="ru">
+                Использую Git для ведения истории изменений: делаю коммиты,
+                работаю в ветке develop и собираю проекты в репозиториях, чтобы
+                код развивался аккуратно и без хаоса.​
+              </p>
+
+              <!-- ------------ EN ---------------- -->
+              <h4 class="services__card-title" data-lang="en" style="display: none;">Git & Project Workflow</h4>
+              <p class="services__card-text" data-lang="en" style="display: none;">
+                I use Git for change history: make commits, work in develop branch, and organize projects in repositories so code develops cleanly without chaos.
+              </p>
+            </div>
+            <!-- ---------------- -->
+          </div>
+        </div>
+      </section>
+      <!-- -------------------------------------------------------------- -->
+
+<section id="works" class="works-section">
+  <div class="container works__container">
+    <div class="works__title-wrapper section-title">
+      <h2 class="works__title" data-lang="ru">Мои Работы</h2>
+      <p class="works__subtitle subtitle" data-lang="ru">В этом разделе собраны проекты, демонстрирующие мои навыки и профессиональный интерес к фронтенд-разработке.</p>
+
+      <!-- ------------ EN ---------------- -->
+      <h2 class="works__title" data-lang="en" style="display: none;">My Works</h2>
+      <p class="works__subtitle subtitle" data-lang="en" style="display: none;">This section showcases projects that demonstrate my skills and professional interest in frontend development.</p>
+    </div>
+    <div class="works__cards-wrapper">
+    <div class="works__card-wrapper">
+        <div class="works__card-img"><img src="./images/Portfolio-card.png" alt=""></div>
+        <div class="works__card-content">
+          <h3 data-lang="ru">Портфолио лендинг</h3>
+          <p data-lang="ru">Созданный с использованием HTML, CSS и JavaScript. Портфолио лендинг демонстрирует мои навыки в фронтенд-разработке и интерактивных элементах.</p>
+
+          <!-- ------------ EN ---------------- -->
+          <h3 data-lang="en" style="display: none;">Portfolio Landing Page</h3>
+          <p data-lang="en" style="display: none;">Built with HTML, CSS, and JavaScript, this portfolio landing page showcases my frontend development skills and interactive elements.</p>
+
+          <div class="works__card-info">
+            <h4 data-lang="ru">Информация о проекте</h4>
+          <!-- ------------ EN ---------------- -->
+            <h4 data-lang="en" style="display: none;">Project Information</h4>
+            <hr>
+            <span>HTML</span>
+            <hr>
+            <span>CSS</span>
+            <hr>
+            <span>JavaScript</span> 
+            <hr>
+          </div>
+          <div class="works__btns-wrapper">
+          <a href="#" class="card-btn"  data-lang="ru">Смотреть Демо <img src="./images/icons/arrow-top-right.svg" alt=""></a>
+        <a href="#" class="card-btn" data-lang="ru">См. на GitHub <img src="./images/icons/arrow-top-right.svg" alt=""></a>
+        <!-- ------------ EN ---------------- -->
+        <a href="#" class="card-btn" data-lang="en" 
+        style="display: none;">Watch Demo <img src="./images/icons/arrow-top-right.svg" alt=""></a>
+        <a href="#" class="card-btn" data-lang="en" style="display: none;">See on Github <img src="./images/icons/arrow-top-right.svg" alt=""></a>
+        </div>
+        </div>
+        
+    </div>
+    </div>
+  </div>
+</section>
+
+      <!-- -------------------------------------------------------------- -->
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top">
+          <span data-lang="ru">Давай<br>Работать Вместе - </span>
+          <!-- ------------ EN ---------------- -->
+          <span data-lang="en" style="display: none;">Let’s</br> Work Together - </span>
+          <div class="footer__top-link">
+            <img src="./images/icons/mail-icon.svg" alt="" />
+            <a href="#">@Email</a>
+          </div>
+        </div>
+        <!-- --------------------------------------- -->
+
+        <div class="footer__bottom">
+          <span data-lang="ru">&copy; 2025 Все права защищены</span>
+          <!-- ------------ EN ---------------- -->
+          <span data-lang="en" style="display: none;">&copy; 2023 all right reserved</span>
+          <div class="footer__social">
+            <a href="#"
+              ><img
+                src="./images/icons/linkedIn-icon.svg"
+                alt="linkedIn icon"
+              />
+            </a>
+            <a href="#">
+              <img src="./images/icons/dribbble-icon.svg" alt="Dribbble icon" />
+            </a>
+            <a href="#">
+              <img src="./images/icons/facebook-icon.svg" alt="facebook icon" />
+            </a>
+            <a href="#">
+              <img
+                src="./images/icons/instagramm-icon.svg"
+                alt="instagramm icon"
+              />
+            </a>
+            <a href="#">
+              <img src="./images/icons/twitter-icon.svg" alt="twitter icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- -----=== Burger-menu ===----- -->
+
+    <div class="burger__menu-wrapper">
+      <div class="burger-menu">
+        <button class="burger__exit" type="button" aria-label="Exit menu">
+          <span></span>
+        </button>
+        <nav aria-label="Mobile navigation">
+          <ul class="burger__menu-list">
+            <li class="burger__menu-item"><a href="index.html#hero" data-lang="ru">Главная</a></li>
+
+            <!-- ------------ EN ---------------- -->
+
+            <li class="burger__menu-item"><a href="index.html#hero" data-lang="en" style="display: none;">Home</a></li>
+
+            <!-- --------------------------------------- -->
+
+            <li class="burger__menu-item"><a href="index.html#about" data-lang="ru">Обо мне</a></li>
+
+            <!-- ------------ EN ---------------- -->
+
+            <li class="burger__menu-item"><a href="index.html#about" data-lang="en" style="display: none;">About</a></li>
+
+            <!-- --------------------------------------- -->
+
+            <li class="burger__menu-item"><a href="index.html#projects" data-lang="ru">Проекты</a></li>
+
+            <!-- ------------ EN ---------------- -->
+
+            <li class="burger__menu-item"><a href="index.html#projects" data-lang="en" style="display: none;">Projects</a></li>
+
+            <!-- --------------------------------------- -->
+
+            <li class="burger__menu-item"><a href="index.html#services" data-lang="ru">Услуги</a></li>
+
+            <!-- ------------ EN ---------------- -->
+
+            <li class="burger__menu-item"><a href="index.html#services" data-lang="en" style="display: none;">Services</a></li>
+
+            <!-- --------------------------------------- -->
+
+            <li class="burger__menu-item"><a href="index.html#works" data-lang="ru">Резюме</a></li>
+
+<!-- ------------ EN ---------------- -->
+
+            <li class="burger__menu-item"><a href="index.html#works" data-lang="en" style="display: none;">Resume</a></li>
+            <!-- --------------------------------------- -->
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
