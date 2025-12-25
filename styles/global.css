@@ -1,30 +1,16 @@
 @font-face {
-  font-family: "Inter";
-  src: url(../fonts/inter/Inter_18pt-Regular.woff2);
+  font-family: "Alice";
+  src: url(../fonts/Alice/Alice-Regular.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url(../fonts/Montserrat/Montserrat-Regular.woff2);
-}
-
-@font-face {
-  font-family: "Oleo Script";
-  font-weight: 400;
-  font-style: normal;
-  src: url(../fonts/Oleo-Script/OleoScript-Regular.woff2);
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins/Poppins-Regular.woff2);
+  font-family: "Marmelad";
+  src: url(../fonts/Marmelad/Marmelad-Regular.woff2) format("woff2");
 }
 
 :root {
-  --font-family: "Inter", sans-serif;
-  --second-family: "Montserrat", sans-serif;
-  --third-family: "Poppins", sans-serif;
-  --fourth-family: "Oleo Script", sans-serif;
+  --font-alice: "Alice", sans-serif;
+  --font-marmelad: "Marmelad", sans-serif;
   --font-45: 2.8125rem;
   --font-35: 2.1875rem;
   --font-26: 1.625rem;
@@ -38,8 +24,8 @@
   --base-white: #fff;
   --white-smoke: #f5f5f5;
   --body-color: #e0e8f6;
-  --active-link: #4fc3f7;
-  --btn-hover: rgb(4, 219, 239);
+  --active-link: #00aeff;
+  --btn-hover: #04dbef;
   --exit-color: #ea4335;
   --icon-bg: #bce7fa;
   --card-text: #1c1e53;
@@ -80,7 +66,7 @@ body.dark {
 }
 
 body.dark .hero-wrapper {
-  background-image: url(../images/hero-bg-black.png);
+  background-image: url(../images/hero-bg-black.webp);
   box-shadow: 0 0px 100px rgb(44, 44, 44);
 }
 
@@ -129,8 +115,9 @@ body.dark .works__card-info > span::before {
 /* --------- /Darck-Theme ---------- */
 
 html {
-  font-family: var(--font-family);
+  font-family: var(--font-alice);
   font-size: 16px;
+  letter-spacing: 0.1rem;
   scroll-behavior: smooth;
 }
 
@@ -149,34 +136,30 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: var(--font-alice);
+  letter-spacing: 0.1rem;
   color: var(--dark-gray);
 }
 
 h1 {
-  font-family: var(--third-family);
   font-size: clamp(3rem, 6.2vw, 3.938rem);
-  font-weight: 700;
-  line-height: 120%;
-  letter-spacing: -0.1rem;
+  font-weight: 600;
+  line-height: 100%;
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-family: var(--font-family);
   font-size: clamp(var(--font-35), 4.4vw, var(--font-45));
   font-weight: 800;
-  letter-spacing: 0.1rem;
 }
 
 h3 {
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: var(--font-24);
   line-height: 120%;
-  letter-spacing: 0.07rem;
 }
 
 h4 {
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: var(--font-20);
   line-height: 120%;
@@ -202,11 +185,10 @@ button:focus-visible {
 
 .section-title {
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .subtitle {
-  font-family: var(--font-family);
+  font-family: var(--second-family);
   font-weight: 600;
   font-size: var(--font-24);
   letter-spacing: 0.08rem;
@@ -224,6 +206,14 @@ button:focus-visible {
   align-items: center;
   flex-direction: column;
   margin-inline: auto;
+}
+
+.section-content > p {
+  font-family: var(--font-alice);
+  font-size: var(--font-20);
+  font-weight: 600;
+  color: var(--dark-gray);
+  letter-spacing: 0.08rem;
 }
 
 .btn {

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
-    <link rel="icon" type="image/svg+xml" href="./images/icons/logo.ico" />
+    <link rel="icon" type="image/png" href="./images/icons/logo-P.png" />
+    <link rel="apple-touch-icon" href="./images/icons/logo-P.png" />
 
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/components.css" />
@@ -18,13 +19,13 @@
         <div class="header__logo"><a href="#">Andrey</a></div>
         <nav aria-label="Main navigation">
           <ul class="header__menu-list">
-            <li class="header__menu-item" data-lang="ru"><a href="index.html#hero">Главная</a></li>
+            <li class="header__menu-item active" data-lang="ru"><a href="index.html#hero">Главная</a></li>
             <li class="header__menu-item" data-lang="ru"><a href="index.html#about">Обо мне</a></li>
             
             <li class="header__menu-item" data-lang="ru"><a href="index.html#services">Услуги</a></li>
             <li class="header__menu-item" data-lang="ru"><a href="index.html#works">Мои работы</a></li>
 <!-- ------------ EN ---------------- -->
-            <li class="header__menu-item" data-lang="en" style="display: none;"><a href="index.html#hero">Home</a></li>
+            <li class="header__menu-item active" data-lang="en" style="display: none;"><a href="index.html#hero">Home</a></li>
             <li class="header__menu-item" data-lang="en" style="display: none;" ><a href="index.html#about">About</a></li>
             <li class="header__menu-item" data-lang="en" style="display: none;"><a href="index.html#services">Services</a></li>
             <li class="header__menu-item" data-lang="en" style="display: none;"><a href="index.html#works">My Works</a></li>
@@ -58,7 +59,7 @@
       <section id="hero" class="hero-section">
         <div class="container hero__container">
           <div class="hero-wrapper">
-            <img class="hero-icon" src="./images/icons/deweloper-icon.svg" alt="developer icon" />
+            <img class="hero-icon" src="./images/icons/deweloper-icon.png" alt="developer icon" />
 
             <div class="hero__title-wrapper section-title">
               <h1 class="hero__title" data-lang="ru">Привет, я Андрей</h1>
@@ -242,7 +243,7 @@
               <div class="services__card_right">
                 <img
                   class="services__card-img"
-                  src="./images/head.png"
+                  src="./images/head.webp"
                   alt="digital head"
                 />
               </div>
@@ -279,15 +280,15 @@
   <div class="container works__container">
     <div class="works__title-wrapper section-title">
       <h2 class="works__title" data-lang="ru">Мои Работы</h2>
-      <p class="works__subtitle subtitle" data-lang="ru">В этом разделе собраны проекты, демонстрирующие мои навыки и профессиональный интерес к фронтенд-разработке.</p>
+       
 
       <!-- ------------ EN ---------------- -->
       <h2 class="works__title" data-lang="en" style="display: none;">My Works</h2>
-      <p class="works__subtitle subtitle" data-lang="en" style="display: none;">This section showcases projects that demonstrate my skills and professional interest in frontend development.</p>
+       
     </div>
     <div class="works__cards-wrapper">
     <div class="works__card-wrapper">
-        <div class="works__card-img"><img src="./images/Portfolio-card.png" alt=""></div>
+        <div class="works__card-img"><img src="./images/Portfolio-card.webp" alt=""></div>
         <div class="works__card-content">
           <h3 data-lang="ru">Портфолио лендинг</h3>
           <p data-lang="ru">Созданный с использованием HTML, CSS и JavaScript. Портфолио лендинг демонстрирует мои навыки в фронтенд-разработке и интерактивных элементах.</p>
@@ -309,12 +310,28 @@
             <hr>
           </div>
           <div class="works__btns-wrapper">
-          <a href="#" class="card-btn"  data-lang="ru">Смотреть Демо <img src="./images/icons/arrow-top-right.svg" alt=""></a>
-        <a href="#" class="card-btn" data-lang="ru">См. на GitHub <img src="./images/icons/arrow-top-right.svg" alt=""></a>
+          <a href="#" class="card-btn btn"  data-lang="ru">Смотреть Демо  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8894 0.706299L0.7063 13.8894" stroke="currentColor" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13.8894 10.377V0.706299H4.21865" stroke="currentColor" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#" class="card-btn btn" data-lang="ru">См. на GitHub  
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8894 0.706299L0.7063 13.8894" stroke="currentColor" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13.8894 10.377V0.706299H4.21865" stroke="currentColor" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></a>
         <!-- ------------ EN ---------------- -->
-        <a href="#" class="card-btn" data-lang="en" 
-        style="display: none;">Watch Demo <img src="./images/icons/arrow-top-right.svg" alt=""></a>
-        <a href="#" class="card-btn" data-lang="en" style="display: none;">See on Github <img src="./images/icons/arrow-top-right.svg" alt=""></a>
+        <a href="#" class="card-btn btn" data-lang="en" 
+        style="display: none;">Watch Demo  
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8894 0.706299L0.7063 13.8894" stroke="currentColor" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13.8894 10.377V0.706299H4.21865" stroke="currentColor" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></a>
+        <a href="#" class="card-btn btn" data-lang="en" style="display: none;">See on Github  
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8894 0.706299L0.7063 13.8894" stroke="currentColor" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13.8894 10.377V0.706299H4.21865" stroke="currentColor" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></a>
         </div>
         </div>
         
@@ -332,10 +349,16 @@
           <span data-lang="ru">Давай<br>Работать Вместе - </span>
           <!-- ------------ EN ---------------- -->
           <span data-lang="en" style="display: none;">Let’s</br> Work Together - </span>
-          <div class="footer__top-link">
-            <img src="./images/icons/mail-icon.svg" alt="" />
-            <a href="#">@Email</a>
-          </div>
+          <a href="mailto:" class="footer__btn btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.90338 19.035H6.88631V11.7907L2.625 8.59473V17.7566C2.625 18.464 3.19819 19.035 3.90338 19.035Z" fill="#4285F4"/>
+              <path d="M17.1135 19.0351H20.0966C20.8039 19.0351 21.3749 18.4619 21.3749 17.7567V8.59473L17.1135 11.7908" fill="#34A853"/>
+              <path d="M17.1135 6.25085V11.7906L21.3749 8.5947V6.88995C21.3749 5.30904 19.5702 4.40773 18.3068 5.35592" fill="#FBBC04"/>
+              <path d="M6.88647 11.7904V6.25068L12.0001 10.0857L17.1137 6.25049V11.7903L12.0001 15.6256" fill="#EA4335"/>
+              <path d="M2.625 6.88995V8.59451L6.88631 11.7905V6.25085L5.69316 5.35592C4.42753 4.40773 2.625 5.30904 2.625 6.88995Z" fill="#C5221F"/>
+            </svg>
+            <span>My Email</span> 
+          </a>
         </div>
         <!-- --------------------------------------- -->
 
