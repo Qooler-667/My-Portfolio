@@ -67,6 +67,11 @@
   border-radius: 500px;
 }
 
+.hero-icon {
+  width: 220px;
+  height: 220px;
+}
+
 .hero__subtitle {
   font-family: var(--second-family);
   font-weight: 600;
@@ -193,8 +198,21 @@
 
 .works__subtitle {
   max-width: 550px;
-  color: var(--dark-slate);
   letter-spacing: 0.07rem;
+
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: var(--font-16);
+  line-height: 150%;
+  background: linear-gradient(
+    115deg,
+    #08091ab7 0%,
+    #006999 50%,
+    #08091ab7 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .works__cards-wrapper {
