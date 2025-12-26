@@ -73,7 +73,7 @@
 }
 
 .hero__subtitle {
-  font-family: var(--second-family);
+  font-family: var(--font-marmelad);
   font-weight: 600;
   font-size: clamp(var(--font-26), 3.5vw, var(--font-35));
 }
@@ -132,8 +132,23 @@
   width: 44px;
   height: 44px;
   border-radius: 8px;
+  color: var(--dark-gray);
+  fill: none;
   background-color: var(--icon-bg);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.icon-sun__card {
+  padding-left: 2px;
+}
+
+.robo-face__icon {
+  padding-top: 3px;
+  padding-right: 2px;
+}
+
+.face-icon__card {
+  padding-left: 2px;
 }
 
 .services__card-img {
@@ -296,7 +311,17 @@
 
 .footer__social {
   display: flex;
-  gap: 24px;
+  height: 24px;
+  gap: 10px;
+}
+
+.footer__social > a {
+  color: var(--dark-gray);
+  transition: 0.3s;
+}
+
+.footer__social > a:hover {
+  color: var(--active-link);
 }
 
 /* ---------------------------------------------------------------- */
